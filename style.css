@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Source Code Pro";
+}
+
+/* Home */
+
+h2,
+h3 {
+  text-align: center;
+  padding: 20px;
+  background-color: #024a86;
+  font-size: 1.5em;
+  border-bottom: #000 4px solid;
+}
+
+h3 {
+  background-color: transparent;
+}
+
+.coin {
+  min-height: 75%;
+  max-width: 500px;
+  background-color: #ef280f;
+  border: 1em #8b0000 solid;
+  border-radius: 50%;
+  margin: auto;
+  margin-top: 50px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.home {
+  height: 100vh;
+  width: 100%;
+  background-color: #ffbf00;
+}
+
+/* Jobs */
+
+.jobs {
+  height: 100vh;
+  width: 100%;
+  background-color: #02ac66;
+}
+
+.boxes {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-around;
+}
+
+.boxes div {
+  height: 100px;
+  width: 150px;
+  background-color: #e36b2c;
+  border: 4px #000 solid;
+  text-align: center;
+  margin: 0 50px;
+  margin-top: 50px;
+}
+
+.boxes div input {
+  display: block;
+  margin: auto;
+}
+
+.boxes div h4 {
+  margin: 5px;
+}
+
+.boxes div input {
+  margin-top: 5px;
+}
+
+.desaparecer {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .boxes {
+    grid-template-columns: auto;
+  }
+
+  .jobs {
+    height: 220vh;
+  }
+}
+
+@media (min-width: 768px) {
+  .boxes {
+    grid-template-columns: auto auto;
+  }
+
+  .jobs {
+    height: 100vh;
+  }
+}
+
+@media (min-width: 1024px) {
+  .boxes {
+    grid-template-columns: auto auto auto;
+  }
+
+  .jobs {
+    height: 100vh;
+  }
+}
+
+.boxes div span {
+  font-weight: bold;
+  color: #44b900;
+}

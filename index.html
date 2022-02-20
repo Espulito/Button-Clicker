@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tycoon</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <article class="home">
+      <h2 id="score">Puntuación: 0</h2>
+      <div class="coin" id="coin" onclick="sumarScore()"></div>
+    </article>
+    <article class="jobs">
+      <h3>Trabajos</h3>
+      <div class="boxes">
+        <div class="boxtop" id="obrerobox">
+          <h4>Obrero</h4>
+          <span>$10</span>
+          <input type="button" value="Comprar" onclick="obrero()" />
+        </div>
+        <div class="boxtop" id="panaderobox">
+          <h4>Panadero</h4>
+          <span>$25</span>
+          <input type="button" value="Comprar" onclick="panadero()" />
+        </div>
+        <div class="boxtop" id="verdulerobox">
+          <h4>Verdulero</h4>
+          <span>$50</span>
+          <input type="button" value="Comprar" onclick="verdulero()" />
+        </div>
+        <div class="boxleft" id="kiosquerobox">
+          <h4>Kiosquero</h4>
+          <span>$100</span>
+          <input type="button" value="Comprar" onclick="kiosquero()" />
+        </div>
+        <div class="boxcenter" id="armerobox">
+          <h4>Armero</h4>
+          <span>$250</span>
+          <input type="button" value="Comprar" onclick="armero()" />
+        </div>
+        <div class="boxright" id="abogadobox">
+          <h4>Abogado</h4>
+          <span>$500</span>
+          <input type="button" value="Comprar" onclick="abogado()" />
+        </div>
+        <div class="boxbottom" id="contadorbox">
+          <h4>Contador</h4>
+          <span>$1.000</span>
+          <input type="button" value="Comprar" onclick="contador()" />
+        </div>
+        <div class="boxbottom" id="inversionistabox">
+          <h4>Inversionista</h4>
+          <span>$5.000</span>
+          <input type="button" value="Comprar" onclick="inversionista()" />
+        </div>
+        <div class="boxbottom" id="empresariobox">
+          <h4>Empresario</h4>
+          <span>$10.000</span>
+          <input type="button" value="Comprar" onclick="empresario()" />
+        </div>
+      </div>
+    </article>
+  </body>
+</html>
