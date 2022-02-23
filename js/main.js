@@ -5,6 +5,7 @@ const puntaje = localStorage.getItem("puntaje") || 0;
 
 function sumarScore() {
   puntaje += 1;
+  localStorage.setItem("puntaje", puntaje.toString());
   score.innerHTML = "Puntuación: " + puntaje.toFixed(1);
 }
 
