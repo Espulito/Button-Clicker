@@ -10,8 +10,8 @@
 
 /* Home */
 
-h2,
-h3 {
+.home h2,
+.jobs h3 {
   text-align: center;
   padding: 20px;
   background-color: #024a86;
