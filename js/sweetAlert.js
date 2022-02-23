@@ -20,3 +20,17 @@ function ventanaRechazado() {
     toast: true,
   });
 }
+
+function ventanaSatisfactorio() {
+  Swal.fire({
+    icon: "success",
+    title: "Se ha realizado satisfactoriamente la compra.",
+    showConfirmButton: false,
+    showCloseButton: true,
+    backdrop: false,
+    timer: "5000",
+    timerProgressBar: true,
+    position: "bottom-right",
+    toast: true,
+  });
+}

@@ -1,6 +1,8 @@
 const score = document.getElementById("score");
 var puntaje = 0;
 
+// Puntaje que se otorga al presionar el botón
+
 function sumarScore() {
   puntaje += 1;
   score.innerHTML = "Puntuación: " + puntaje.toFixed(1);
@@ -16,6 +18,7 @@ function trabajos(cuantoCuesta, cuantoDa, trabajoBox) {
       score.innerHTML = "Puntuación: " + puntaje.toFixed(1);
     }, 1000);
     document.getElementById(trabajoBox).classList.add("desaparecer");
+    ventanaSatisfactorio();
   } else {
     return ventanaRechazado();
   }
