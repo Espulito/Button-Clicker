@@ -1,5 +1,5 @@
 const score = document.getElementById("score");
-var puntaje = 0;
+const puntaje = localStorage.getItem("puntaje") || 0;
 
 // Puntaje que se otorga al presionar el botón
 
