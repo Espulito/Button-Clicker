@@ -17,6 +17,6 @@ function trabajos(cuantoCuesta, cuantoDa, trabajoBox) {
     }, 1000);
     document.getElementById(trabajoBox).classList.add("desaparecer");
   } else {
-    alert("Tu puntaje actual es menor a " + cuantoCuesta + ".");
+    return ventanaRechazado();
   }
 }

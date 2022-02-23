@@ -5,3 +5,18 @@ Swal.fire({
   showConfirmButton: false,
   showCloseButton: true,
 });
+
+function ventanaRechazado() {
+  Swal.fire({
+    icon: "error",
+    title: "Error:",
+    text: "Tu saldo actual es menor al requerido para realizar la compra.",
+    showConfirmButton: false,
+    showCloseButton: true,
+    backdrop: false,
+    timer: "5000",
+    timerProgressBar: true,
+    position: "bottom-right",
+    toast: true,
+  });
+}
