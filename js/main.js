@@ -1,11 +1,14 @@
 const score = document.getElementById("score");
-var puntaje = 0;
+var puntaje = Number(localStorage.getItem("puntaje")) || 0;
+
+score.innerHTML = "Puntuación: " + localStorage.getItem("puntaje");
 
 // Puntaje que se otorga al presionar el botón
 
 function sumarScore() {
   puntaje += 1;
-  score.innerHTML = "Puntuación: " + puntaje.toFixed(1);
+  localStorage.setItem("puntaje", puntaje.toFixed(1));
+  score.innerHTML = "Puntuación: " + localStorage.getItem("puntaje");
 }
 
 // Trabajos
@@ -15,7 +18,8 @@ function trabajos(cuantoCuesta, cuantoDa, trabajoBox) {
     puntaje -= cuantoCuesta;
     setInterval(() => {
       puntaje += cuantoDa;
-      score.innerHTML = "Puntuación: " + puntaje.toFixed(1);
+      localStorage.setItem("puntaje", puntaje.toFixed(1));
+      score.innerHTML = "Puntuación: " + localStorage.getItem("puntaje");
     }, 1000);
     document.getElementById(trabajoBox).classList.add("desaparecer");
     ventanaSatisfactorio();
