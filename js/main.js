@@ -1,7 +1,7 @@
 const score = document.getElementById("score");
 var puntaje = Number(localStorage.getItem("puntaje")) || 0;
 
-score.innerHTML = "Puntuación: " + localStorage.getItem("puntaje");
+score.innerHTML = "Puntuación: " + localStorage.getItem("puntaje") || puntaje;
 
 // Puntaje que se otorga al presionar el botón
 
