@@ -4,8 +4,8 @@
 
 ## Preview
 
-![Button Clicker Preview 1](img/#home.png)
-![Button Clicker Preview 2](img/#jobs.png)
-![Button Clicker Preview 3 ](img/#settings.png)
+![Button Clicker Preview 1](https://button-clicker.com/img/#home.png)
+![Button Clicker Preview 2](https://button-clicker.com/img/#jobs.png)
+![Button Clicker Preview 3 ](https://button-clicker.com/img/#settings.png)
 
 Por: [Espulito](https://instagram.com/Martin_Reale13)
